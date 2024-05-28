@@ -117,8 +117,8 @@ const Catalog = () => {
             {/* Section2 */}
             <div className=" mx-auto box-content w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
                 <div className="section_heading">
-                    Top Courses in
-                    <span>{catalogPageData?.data?.selectedCategory?.name}</span>
+                    Top Courses in {" "}
+                    <span>{catalogPageData?.data?.selectedCategory?.name}.</span>
                 </div>
                 <div className="py-8">
                     <CourseSlider Course={catalogPageData?.data?.differentCategory?.course} />
