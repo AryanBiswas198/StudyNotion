@@ -69,15 +69,15 @@ const Navbar = () => {
 
                 {/* Nav links */}
                 <nav className="hidden md:block">
-                    <ul className="flex gap-x-6 text-richblack-25">
+                    <ul className="flex gap-x-7 text-richblack-25">
                         {NavbarLinks.map((link, index) => (
                             <li key={index}>
                                 {link.title === "Catalog" ? (
                                     <>
                                         <div
                                             className={`group relative flex cursor-pointer items-center gap-1 ${matchRoute("/catalog/:catalogName")
-                                                ? "text-yellow-25"
-                                                : "text-richblack-25"
+                                                ? "text-black bg-yellow-25 px-3 py-1 rounded-xl text-center"
+                                                : "text-richblack-25 px-2.5 py-1"
                                                 }`}
                                         >
                                             <p>{link.title}</p>
@@ -115,8 +115,8 @@ const Navbar = () => {
                                     <Link to={link?.path}>
                                         <p
                                             className={`${matchRoute(link?.path)
-                                                ? "text-yellow-25"
-                                                : "text-richblack-25"
+                                                ? "text-black bg-yellow-25 px-3 py-1 rounded-xl text-center"
+                                                : "text-richblack-25 px-2 py-1"
                                                 }`}
                                         >
                                             {link.title}
@@ -162,7 +162,7 @@ const Navbar = () => {
                         token === null && (
                             <Link to={"/signup"}>
                                 <button className="rounded-[8px] border border-richblack-700 bg-richblack-800 px-[12px] py-[8px] text-richblack-100">
-                                    Sign up
+                                    Sign Up
                                 </button>
                             </Link>
                         )

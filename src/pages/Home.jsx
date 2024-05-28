@@ -131,7 +131,7 @@ const Home = () => {
 
                         codeblock={`import React from "react";\n import CTAButton from "./Button";\nimport TypeAnimation from "react-type";\nimport { FaArrowRight } from "react-icons/fa";\n\nconst Home = () => {\nreturn (\n<div>Home</div>\n)\n}\nexport default Home;`}
 
-                        codeColor={"text-yellow-25"}
+                        codeColor={"text-white"}
                         backgroundGradient={<div className="codeblock2 absolute"></div>}
                     />
                 </div>
